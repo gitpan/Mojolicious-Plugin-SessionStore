@@ -3,6 +3,8 @@ package Mojolicious::Sessions::Storable;
 use strict;
 use warnings;
 
+our $VERSION = '0.02';
+
 use Mojo::Base 'Mojolicious::Sessions';
 use Digest::SHA1 ();
 
@@ -163,7 +165,7 @@ If no option is provided the default L<Mojolicious::Sessions> will be used.
 
 This is a CODE ref use to generate unique session ids. by default it will generate a SHA1 using fairly sufficient entropy.
 
-=head METHODS
+=head1 METHODS
 
 Mojolicious::Sessions::Storable inherits all methods from L<Mojolicious::Sessions>.
 
