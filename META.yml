@@ -30,4 +30,4 @@ resources:
   bugtracker: https://github.com/hayajo/Mojolicious-Plugin-SessionStore/issues
   homepage: https://github.com/hayajo/Mojolicious-Plugin-SessionStore
   repository: https://github.com/hayajo/Mojolicious-Plugin-SessionStore.git
-version: 0.02
+version: 0.03

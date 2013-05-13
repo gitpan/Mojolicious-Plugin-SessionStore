@@ -1,7 +1,7 @@
 package Mojolicious::Plugin::SessionStore;
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Mojolicious::Sessions::Storable;
 
@@ -11,6 +11,7 @@ sub register {
     my $sessions
         = Mojolicious::Sessions::Storable->new(%$args);
     $app->sessions($sessions);
+    return $sessions;
 }
 
 1;
