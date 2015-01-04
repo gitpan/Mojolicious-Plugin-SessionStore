@@ -3,7 +3,7 @@ package Mojolicious::Sessions::Storable;
 use strict;
 use warnings;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Mojo::Base 'Mojolicious::Sessions';
 use Digest::SHA1 ();
@@ -25,7 +25,7 @@ sub new {
     {
         Mojolicious::Controller->attr(
             session_options => sub {
-                $_[0]->stash->{'mojox.session.options'}
+                $_[0]->stash->{'mojox.session.options'} ||= {};
             },
         );
     }
